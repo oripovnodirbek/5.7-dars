@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-dars</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="bg-gradient-to-r from-violet-500 to-fuchsia-500">
+    <div class="max-w-5xl mx-auto px-3 border-2 rounded border-slate-500 bg-slate-500 text-white mt-20 p-4">
+       <div class="flex justify-between py-10 items-center">
+        <button id="again-btn" class="border-2 rounded px-3 py-2 bg-cyan-400 hover:bg-red-500 hover:border-red-500">Again</button>
+        <p>Guess number between <span class="font-bold">1 and 20</span></p>
+       </div>
+
+
+       <div class="mx-auto mt-5 text-4xl w-32 h-32 bg-green-500 flex justify-center items-center rounded-xl">
+        <span id="result">?</span>
+       </div>
+
+
+       <div class="flex justify-between items-center mt-32">
+
+         <form>
+            <input class="border-2 px-3 py-4 text-2xl w-52 text-black" type="number" id="guess-number">
+            <button class="border-2 rounded px-3 py-2 bg-cyan-400 hover:bg-red-500 hover:border-red-500">Again</button>
+         </form>
+
+         <div>
+            <h1 id="status-game">Start</h1>
+            <p>Attemps: <span id="attemps">15</span></p>
+            <p>Record: <span id="record">0</span></p>
+         </div>
+
+       </div>
+
+    </div>
+
+    <script src="./src/js/app.js"></script>
+</body>
+</html>
